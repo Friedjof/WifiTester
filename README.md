@@ -93,7 +93,26 @@ For those who prefer a reproducible development environment, `nix-shell` is used
 
    This will set up the environment defined in your `shell.nix` file.
 
-### Flashing Using the Makefile
+### Falshing using the binaries from the releases section
+In the release section, you can find the latest binary files for the esp32. You can use the following commands to flash the binary files to the `ESP32` microcontroller.
+You may need to adjust the `--port` parameter to match your system configuration.
+
+You need to install the esptool first.
+```bash
+pip install esptool
+```
+
+#### firmware.bin, bootloader.bin and partitions.bin
+```bash
+esptool.py --port /dev/ttyUSB0 --baud 921600 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 bootloader.bin 0x8000 partitions.bin 0x10000 firmware.bin
+```
+
+#### littlefs.bin
+```bash
+esptool.py --port /dev/ttyUSB0 --baud 921600 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 40m --flash_size detect 0x290000 littlefs.bin
+```
+
+### Flashing using the Makefile
 
 The Makefile contains predefined commands that facilitate building and flashing the firmware onto your board.
 
