@@ -1,6 +1,6 @@
 # WiFiTester
 
-WiFiTester is a versatile tool designed for the Heltec WiFi LoRa 32 V2 board that measures WiFi signal strength and communicates this information to a designated MQTT broker. You can also switch off MQTT if you don't want to use it. See the config.json for this. Additionally, it utilizes the board's built-in OLED display to provide a visual representation of the WiFi signal quality. This project is particularly useful for those looking to evaluate and monitor their wireless network's performance in different locations or for IoT applications requiring reliable WiFi connectivity.
+WiFiTester is a versatile tool designed for the Heltec WiFi LoRa 32 V2 board that measures WiFi signal strength and communicates this information to a designated MQTT broker. You can also switch off MQTT if you don't want to use it. See the `config.json` for this (more [HERE](#Configuration)). Additionally, it utilizes the board's built-in OLED display to provide a visual representation of the WiFi signal quality. This project is particularly useful for those looking to evaluate and monitor their wireless network's performance in different locations or for IoT applications requiring reliable WiFi connectivity.
 
 ![WiFiTester](./images/wifi-tester.jpg)
 
@@ -202,6 +202,6 @@ We look forward to seeing how WiFiTester evolves with your contributions and fee
 
 ## Getting Help
 
-If you need help with setting up or using WiFiTester, please reach out to the community on [our forum](#) or [Gitter chat](#). You can also find additional resources and documentation on [the project's wiki](#).
+If you need help with setting up or using WiFiTester, please reach out to the community on [our forum](https://matrix.to/#/!myHiqKhSGIVJjiAVUf:matrix.org?via=matrix.org).
 
 Thank you for using and contributing to WiFiTester!
