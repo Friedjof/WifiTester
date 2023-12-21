@@ -40,7 +40,7 @@ The `config.json` file consists of several key-value pairs that determine the be
 
 For the MQTT communication settings:
 
-- `mqtt.enabled`: A boolean value that enables (`true`) or disables (`false`) the MQTT functionality.
+- `mqtt.enabled`: A boolean value that enables (`1`) or disables (`0`) the MQTT functionality.
 - `mqtt.host`: The hostname or IP address of the MQTT broker.
 - `mqtt.port`: The port number on which the MQTT broker is listening (default is `1883`).
 - `mqtt.user`: The username required to authenticate with the MQTT broker.
@@ -61,7 +61,7 @@ Here is an example of what your `config.json` file might look like:
         "password": "your_wifi_password"
     },
     "mqtt": {
-        "enabled": true,
+        "enabled": 1,
         "host": "your_mqtt_host",
         "port": 1883,
         "user": "your_mqtt_user",
