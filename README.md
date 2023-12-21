@@ -112,7 +112,7 @@ esptool.py --port /dev/ttyUSB0 --baud 921600 --before default_reset --after hard
 esptool.py --port /dev/ttyUSB0 --baud 921600 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 40m --flash_size detect 0x290000 littlefs.bin
 ```
 
-### Flashing using the Makefile
+### Flashing using the Makefile (from source)
 
 The Makefile contains predefined commands that facilitate building and flashing the firmware onto your board.
 
