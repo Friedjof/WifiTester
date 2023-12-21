@@ -144,21 +144,21 @@ The Makefile contains predefined commands that facilitate building and flashing 
 
    Adjust the `UPLOAD_SPEED` in the Makefile if your board uses a different baud rate.
 
-### Uploading Filesystem Image (SPIFFS)
+### Uploading Filesystem Image (Littlefs)
 
-If your application uses SPIFFS for storing the configuration file or other data:
+If your application uses Littlefs for storing the configuration file or other data:
 
-1. **Create the SPIFFS Image:**
+1. **Create the Littlefs Image:**
 
-   First, you need to build the SPIFFS image from the contents of the `./data` directory:
+   First, you need to build the Littlefs image from the contents of the `./data` directory:
 
    ```shell
    make fs
    ```
 
-2. **Upload the SPIFFS Image:**
+2. **Upload the Littlefs Image:**
 
-   To upload the SPIFFS image to your board, run:
+   To upload the Littlefs image to your board, run:
 
    ```shell
    make uploadfs
@@ -172,13 +172,13 @@ If your application uses SPIFFS for storing the configuration file or other data
   make start
   ```
 
-- To re-upload the SPIFFS and restart monitoring, use:
+- To re-upload the Littlefs and restart monitoring, use:
 
   ```shell
   make reupload
   ```
 
-- To flash the firmware and start monitoring without touching the SPIFFS, use:
+- To flash the firmware and start monitoring without touching the Littlefs, use:
 
   ```shell
   make reload

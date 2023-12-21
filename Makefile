@@ -15,8 +15,8 @@ UPLOAD_SPEED = 115200
 # Define the ESP32 board model (e.g., esp32, esp32dev, etc.)
 BOARD = esp32dev
 
-# Location of the SPIFFS filesystem directory
-SPIFFS_DIR = data
+# Location of the Littlefs filesystem directory
+Littlefs_DIR = data
 
 # Location of PlatformIO build directory
 BUILD_DIR = .pio/build/$(BOARD)
@@ -84,8 +84,8 @@ help:
 	@echo "  make build        - Build the project"
 	@echo "  make flash        - Upload firmware to ESP32"
 	@echo "  make clean        - Clean build files"
-	@echo "  make fs           - Build SPIFFS filesystem image"
-	@echo "  make uploadfs     - Upload SPIFFS filesystem image"
+	@echo "  make fs           - Build Littlefs filesystem image"
+	@echo "  make uploadfs     - Upload Littlefs filesystem image"
 	@echo "  make monitor      - Monitor serial output"
 	@echo "  make start        - Upload filesystem and firmware, then monitor serial output"
 	@echo "  make reupload     - Upload filesystem, then monitor serial output"
