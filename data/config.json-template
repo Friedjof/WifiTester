@@ -1,0 +1,15 @@
+{
+    "system": {
+        "interval": 10000
+    }, "wifi": {
+        "ssid": "SSID",
+        "password": "PASSWORD"
+    }, "mqtt": {
+        "enabled": true,
+        "host": "MQTT_HOST",
+        "port": 1883,
+        "user": "MQTT_USER",
+        "password": "MQTT_PASSWORD",
+        "topic": "MQTT_TOPIC"
+    }
+}
