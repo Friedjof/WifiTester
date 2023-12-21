@@ -94,7 +94,7 @@ For those who prefer a reproducible development environment, `nix-shell` is used
    This will set up the environment defined in your `shell.nix` file.
 
 ### Falshing using the binaries from the releases section
-In the release section, you can find the latest binary files for the esp32. You can use the following commands to flash the binary files to the `ESP32` microcontroller.
+In the [release section](https://github.com/Friedjof/WifiTester/releases), you can find the latest binary files for the esp32. You can use the following commands to flash the binary files to the `ESP32` microcontroller.
 You may need to adjust the `--port` parameter to match your system configuration.
 
 You need to install the esptool first.
