@@ -5,7 +5,7 @@
         "ssid": "SSID",
         "password": "PASSWORD"
     }, "mqtt": {
-        "enabled": true,
+        "enabled": 1,
         "host": "MQTT_HOST",
         "port": 1883,
         "user": "MQTT_USER",
